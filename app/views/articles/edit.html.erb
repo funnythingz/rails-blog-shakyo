@@ -1,8 +1,8 @@
 <section>
 
-    <h1>new Article</h1>
+    <h1>Editing Article</h1>
 
-    <%= form_for :article, url: articles_path do |f| %>
+    <%= form_for :article, url: article_path(@article), method: :patch do |f| %>
 
         <% if @article.errors.any? %>
             <p class="text-warning"><%= pluralize(@article.errors.count, 'error') %></p>
@@ -23,7 +23,7 @@
             <%= f.text_area :text, :class => 'form-control' %>
         </div>
 
-        <%= f.submit 'post', {:class => 'btn btn-default'} %>
+        <%= f.submit 'update', {:class => 'btn btn-default'} %>
     <% end %>
 
     <p><%= link_to 'Back', articles_path %></p>
