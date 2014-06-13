@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/funnythingz/typescript-rails.git
+  revision: b67eea93c04af71faa0c6298ff3f829afb957662
+  specs:
+    typescript-rails (0.1.3)
+      railties
+      tilt (~> 1.3)
+      typescript-node (~> 0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -114,6 +123,9 @@ GEM
       polyglot (>= 0.3.1)
     turbolinks (2.2.2)
       coffee-rails
+    typescript-node (0.0.6)
+      typescript-src (~> 1.0)
+    typescript-src (1.0.0.0)
     tzinfo (1.1.0)
       thread_safe (~> 0.1)
     uglifier (2.5.0)
@@ -135,4 +147,5 @@ DEPENDENCIES
   spring
   sqlite3
   turbolinks
+  typescript-rails (>= 0.1.3)!
   uglifier (>= 1.3.0)
