@@ -7,11 +7,7 @@ http://guides.rubyonrails.org/getting_started.html
 ```
 % bundle install
 % rake db:migrate
-```
-
-show
-
-```
 % rails s
-access to http://localhost:3000
 ```
+
+access to http://localhost:3000
