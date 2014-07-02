@@ -23,9 +23,10 @@
             <%= f.text_area :text, :class => 'form-control' %>
         </div>
 
-        <%= f.submit 'post', {:class => 'btn btn-default'} %>
+        <div class="clearfix">
+            <div class="pull-left"><a href="<%= articles_path %>" class="btn btn-default">Back</a></div>
+            <div class="pull-right"><%= f.submit 'Post', {:class => 'btn btn-default'} %></div>
+        </div>
     <% end %>
-
-    <p><%= link_to 'Back', articles_path %></p>
 
 </section>
