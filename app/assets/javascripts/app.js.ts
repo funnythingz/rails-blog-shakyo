@@ -1,7 +1,6 @@
 /// <reference path="../typings/jquery/jquery.d.ts"/>
 
-/// <reference path="../ts/clazz.js.ts"/>
-/// <reference path="../ts/car.js.ts"/>
+/// <reference path="../ts/event-helper.js.ts"/>
 
 module Rails {
 
@@ -9,17 +8,12 @@ module Rails {
 
         constructor() {
             console.log('Typescript ready.');
-            this.display($('<p>use TypeScript.</p>'));
-            this.loadClazz();
+            this.delegater();
         }
 
-        private display($el: JQuery) {
-            $('#hero-content').append($el);
-        }
-
-        private loadClazz() {
-            var clazz = new Clazz();
-            console.log(clazz.hoge('ahya'));
+        private delegater() {
+            var eventHelper = new EventHelper();
+            eventHelper.delegates();
         }
 
     }
