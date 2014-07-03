@@ -5,8 +5,8 @@ class EventHelper {
     }
 
     private editHelper() {
-        $('.btn-edit').on('click', function() {
-            location.href = $(this).data('link');
+        $('.btn-edit').on('click', function(event) {
+            location.pathname = $(this).data('link');
         });
     }
 

@@ -8,7 +8,7 @@ module Rails {
 
         constructor() {
             console.log('Typescript ready.');
-            this.delegater();
+            //this.delegater();
         }
 
         private delegater() {

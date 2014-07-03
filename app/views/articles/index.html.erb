@@ -8,15 +8,13 @@
     <div class="list-group">
         <% @articles.each do |article| %>
         <a href="<%= article_path(article) %>" class="list-group-item clearfix" id="<%= article.id %>">
-            <article>
-                <div class="pull-left">
-                    <h4 class="list-group-item-heading"><%= article.title %></h4>
-                    <p class="list-group-item-text"><%= article.text %></p>
-                </div>
-                <div class="pull-right">
-                    <button type="button" class="btn btn-info btn-edit" data-link="<%= edit_article_path(article) %>"><span class="glyphicon glyphicon-edit"></span></button>
-                </div>
-            </article>
+            <div class="pull-left">
+                <h4 class="list-group-item-heading"><%= article.title %></h4>
+                <p class="list-group-item-text"><%= article.text %></p>
+            </div>
+            <div class="pull-right">
+                <div type="button" class="btn btn-info btn-edit" data-link="<%= edit_article_path(article) %>" onclick="location.pathname = this.getAttribute('data-link')"><span class="glyphicon glyphicon-edit"></span></div>
+            </div>
         </a>
         <% end %>
     </div>
