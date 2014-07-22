@@ -1,6 +1,9 @@
 <section>
 
-    <h1>Editing Article</h1>
+    <header class="articles-index-header">
+        <h1 class="pull-left">Editing Article</h1>
+        <div class="pull-right remove-article"><a href="" class="btn btn-info btn-remove"><span class="glyphicon glyphicon-remove"></span></a></div>
+    </header>
 
     <%= form_for :article, url: article_path(@article), method: :patch do |f| %>
 
