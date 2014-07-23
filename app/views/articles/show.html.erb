@@ -1,10 +1,17 @@
-<article>
-    <h1><%= @article.title %></h1>
-    <section>
-    <p><%= @article.text %></p>
-    </section>
-</article>
+<section>
+
+    <header class="articles-index-header">
+        <h1 class="pull-left"><%= @article.title %></h1>
+    </header>
+
+    <article>
+        <p><%= @article.text %></p>
+    </article>
+
+</section>
 
 <footer>
-    <p><a href="<%= articles_path %>" class="btn btn-default">Back</a></p>
+    <div class="pull-right">
+        <p><a href="<%= articles_path %>" class="btn btn-default">Back</a></p>
+    </div>
 </footer>

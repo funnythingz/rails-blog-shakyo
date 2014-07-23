@@ -1,6 +1,11 @@
 <section>
 
-    <h1>new Article</h1>
+    <header class="articles-index-header">
+        <h1 class="pull-left">new Article</h1>
+        <div class="pull-right remove-article">
+            <a href="<%= articles_path %>" class="btn btn-default">Back</a>
+        </div>
+    </header>
 
     <%= form_for :article, url: articles_path do |f| %>
 
@@ -24,8 +29,7 @@
         </div>
 
         <div class="clearfix">
-            <div class="pull-left"><a href="<%= articles_path %>" class="btn btn-default">Back</a></div>
-            <div class="pull-right"><%= f.submit 'Post', {:class => 'btn btn-default'} %></div>
+            <div class="pull-right"><%= f.submit 'Post', {:class => 'btn btn-primary btn-lg'} %></div>
         </div>
     <% end %>
 

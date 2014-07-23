@@ -2,7 +2,7 @@
 
     <header class="articles-index-header">
         <h1 class="pull-left">Articles</h1>
-        <div class="pull-right create-new-article"><%= link_to 'New article', new_article_path, {:class => 'btn btn-default btn-lg'} %></div>
+        <div class="pull-right create-new-article"><a href="<%= new_article_path %>" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-pencil"></span></a></div>
     </header>
 
     <div class="list-group">
