@@ -10,3 +10,20 @@
 .remove-article {
   margin-top: 20px;
 }
+
+.list-group-item-text {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.article-comment {
+
+  width: 32px;
+
+  .-count {
+    vertical-align: text-top;
+  }
+
+}

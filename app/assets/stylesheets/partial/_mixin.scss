@@ -1,0 +1,68 @@
+/**
+ * .hoge {
+ *   @include transparent('background-color', #000, 0.5);
+ * }
+ */
+@mixin transparent($attribute, $color, $alpha) {
+  $rgba: rgba($color, $alpha);
+  $ie-hex-str: ie-hex-str($rgba);
+  #{$attribute}: transparent;
+  #{$attribute}: $rgba;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex-str},endColorstr=#{$ie-hex-str});
+  zoom: 1;
+}
+
+@mixin typographyModule {
+  
+  $_defaultFontSize: 14;
+  $_defaultLineHeight: 1.5;
+ 
+  %_font-size-huge {
+    font-size: addPx(sum($_defaultFontSize, 4));
+  }
+  %_font-size-large {
+    font-size: addPx(sum($_defaultFontSize, 2));
+  }
+  %_font-size-default {
+    font-size: addPx($_defaultFontSize);
+  }
+  %_font-size-small {
+    font-size: addPx(sum($_defaultFontSize, -2));
+  }
+  %_font-size-tiny {
+    font-size: addPx(sum($_defaultFontSize, -4));
+  }
+  
+  %_sentence {
+    line-height: #{$_defaultLineHeight};
+  }
+  
+  %_strong {
+    font-weight: bold;
+  }
+
+  %_color {
+    color: #066;
+  }
+
+  %_minor {
+    color: #007d08;
+  }
+
+  %_huge {
+    @extend %_sentence, %_font-size-huge;
+  }
+
+  %_large {
+    @extend %_sentence, %_font-size-large;
+  }
+
+  %_small {
+    @extend %_sentence, %_font-size-small;
+  }
+
+  %_tiny {
+    @extend %_sentence, %_font-size-tiny;
+  }
+
+}
