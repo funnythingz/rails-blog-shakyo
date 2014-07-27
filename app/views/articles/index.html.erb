@@ -15,8 +15,7 @@
                 </div>
                 <% unless article.comments.empty? %>
                 <p class="-item article-comment">
-                    <span class="glyphicon glyphicon-comment"></span>
-                    <span class="small -count"><%= article.comments.length %></span>
+                    <span class="badge"><%= article.comments.length %></span>
                 </p>
                 <% end %>
                 <div class="-item-icon48">
