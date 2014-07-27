@@ -3,16 +3,16 @@
 .sentence {
   @extend %_sentence, %_font-size-default;
 }
-.huge {
+.text-huge {
   @extend %_huge;
 }
-.large {
+.text-large {
   @extend %_large;
 }
-.small {
+.text-small {
   @extend %_small;
 }
-.tiny {
+.text-tiny {
   @extend %_tiny;
 }
  

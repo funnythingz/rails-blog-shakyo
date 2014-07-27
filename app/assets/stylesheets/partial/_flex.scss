@@ -33,6 +33,10 @@
     @extend %_item;
   }
 
+  > .-item-icon18 {
+    @include icon(18);
+  }
+
   > .-item-icon24 {
     @include icon(24);
   }

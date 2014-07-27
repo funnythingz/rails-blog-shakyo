@@ -17,7 +17,7 @@
   $_defaultFontSize: 14;
   $_defaultLineHeight: 1.5;
  
-  %_font-size-huge {
+text-  %_font-size-huge {
     font-size: addPx(sum($_defaultFontSize, 4));
   }
   %_font-size-large {
@@ -46,7 +46,7 @@
   }
 
   %_minor {
-    color: #007d08;
+    color: #c7c8c9;
   }
 
   %_huge {

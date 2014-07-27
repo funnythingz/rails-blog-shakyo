@@ -1,4 +1,13 @@
 <blockquote>
-    <p><%= comment.body %></p>
-    <footer><%= comment.commenter %></footer>
+    <div class="flex">
+        <div class="-item">
+            <p><%= comment.body %></p>
+            <footer><%= comment.commenter %></footer>
+        </div>
+        <div class="-item-icon24">
+            <%= link_to [comment.article, comment], method: :delete, data: { confirm: 'Are you sure?' } do %>
+                <span class="glyphicon glyphicon-remove text-small minor"></span>
+            <% end %>
+        </div>
+    </div>
 </blockquote>
