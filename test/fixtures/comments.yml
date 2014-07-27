@@ -2,8 +2,10 @@
 
 one:
   commenter: MyString
-  body: MyText
+  bodt: MyText
+  article_id: 
 
 two:
   commenter: MyString
-  body: MyText
+  bodt: MyText
+  article_id: 

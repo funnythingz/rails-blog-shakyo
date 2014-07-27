@@ -2,7 +2,7 @@ class Comment < ActiveRecord::Base
     belongs_to :article
 end
 
-class CreateComments < ActiveRecord::Migration
+class CreateComment < ActiveRecord::Migration
     def change
         create_table :comments do |t|
             t.string :commenter
